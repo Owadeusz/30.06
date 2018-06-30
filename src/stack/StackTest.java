@@ -2,9 +2,9 @@ package stack;
 
 public class StackTest {
     public static void main(String[] args) {
-        Stack stack = new Stack (10);
+        Stack <Integer> stack = new Stack<> (10);
 
-       /* System.out.println("Is empty: " + stack.isEmpty()); // sprawdzamy czy stos jest pusty
+        System.out.println("Is empty: " + stack.isEmpty()); // sprawdzamy czy stos jest pusty
         stack.push(9); // dolozenie elementu do stosu
         System.out.println("Is empty: " + stack.isEmpty()); //po dolozeniu elementu stos nie jest pusty
         System.out.println("Stack top: " + stack.peek()); // wyswietlenie ostatniego dolozonego elementu
@@ -17,7 +17,7 @@ public class StackTest {
         stack.push(45);
         System.out.println("top: " + stack.peek());
         stack.push(78);
-        System.out.println("top: " + stack.peek());*/
+        System.out.println("top: " + stack.peek());
 
        Box<String, Integer> box =
                new Box<>("Tekst", 10);
