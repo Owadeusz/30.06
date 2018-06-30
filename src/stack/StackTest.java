@@ -2,7 +2,8 @@ package stack;
 
 public class StackTest {
     public static void main(String[] args) {
-        Stack <Integer> stack = new Stack<> (10);
+        ArrayStack <Integer> stack = new ArrayStack<>(10);
+
 
         System.out.println("Is empty: " + stack.isEmpty()); // sprawdzamy czy stos jest pusty
         stack.push(9); // dolozenie elementu do stosu
@@ -28,5 +29,11 @@ public class StackTest {
         System.out.println(box.getElement() + box.getNumber());
         System.out.println(box2.toString());
         System.out.println(box3.toString());
+
+        /*LinkedStack linkedStack = new LinkedStack();
+        linkedStack.push(4);
+        linkedStack.push(8);
+
+        System.out.println(linkedStack.peek());*/
     }
 }
